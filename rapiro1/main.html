@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Rapiro Controller</title>
+</head>
+<body>
+
+<div>RAPIRO Controller</div><br/>
+<div id="serial_status">Not Connect</div>
+<select id="serial_devices"></select>
+<button id="serial_refresh">Refresh</button><br/>
+<button id="serial_open" class="button_serial">Open Serial</button>
+<button id="serial_close" class="button_serial">Close Serial</button><br/><br/>
+
+<div class="block_show">
+	<button id="show_move" class="button_show">Move</button>
+	<button id="show_pose" class="button_show">Pose</button>
+</div>
+<br class="clear" />
+
+<div id="block_move">
+	<table class="block_arrow">
+	<tr><td>
+	</td><td>
+		<input id="move_forward" type="image" src="img/move_forward.png" />
+	</td><td>
+	</td></tr>
+	<tr><td>
+		<input id="move_left" type="image" src="img/move_left.png" />
+	</td><td>
+		<input id="move_stop" type="image" src="img/move_stop.png" />
+	</td><td>
+		<input id="move_right" type="image" src="img/move_right.png" />
+	</td></tr>
+	<tr><td>
+	</td><td>
+		<input id="move_back" type="image" src="img/move_back.png" />
+	</td><td>
+	</td></tr>
+	</table>
+	<table>
+	<tr><td>
+		<input id="move_green" type="button" value="Green" />
+	</td><td>
+		<input id="move_blue" type="button" value="Blue" />
+	</td><td>
+		<input id="move_red" type="button" value="Red" />
+	</td></tr>
+	<tr><td>
+		<input id="move_yellow" type="button" value="Yellow" />
+	</td><td>
+		<input id="move_push" type="button" value="Push" />
+	</td><td>
+	</td></tr>
+	</table>
+</div>
+
+<div id="block_pose">
+<div class="pose_div">
+	<span class="pose_title">Head</span>
+	<button id="minus_00">-</button>
+	<button id="plus_00">+</button>
+	<span id="text_00"></span>
+	<input id="slide_00" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">Waist</span>
+	<button id="minus_01">-</button>
+	<button id="plus_01">+</button>
+	<span id="text_01"></span>
+	<input id="slide_01" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">R Sholder Roll</span>
+	<button id="minus_02">-</button>
+	<button id="plus_02">+</button>
+	<span id="text_02"></span>
+	<input id="slide_02" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">R Sholder Pitch</span>
+	<button id="minus_03">-</button>
+	<button id="plus_03">+</button>
+	<span id="text_03"></span>
+	<input id="slide_03" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">R Hand</span>
+	<button id="minus_04">-</button>
+	<button id="plus_04">+</button>
+	<span id="text_04"></span>
+	<input id="slide_04" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">L Sholder Roll</span>
+	<button id="minus_05">-</button>
+	<button id="plus_05">+</button>
+	<span id="text_05"></span>
+	<input id="slide_05" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">L Sholder Pitch</span>
+	<button id="minus_06">-</button>
+	<button id="plus_06">+</button>
+	<span id="text_06"></span>
+	<input id="slide_06" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">L Hand</span>
+	<button id="minus_07">-</button>
+	<button id="plus_07">+</button>
+	<span id="text_07"></span>
+	<input id="slide_07" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">R Foot Yaw</span>
+	<button id="minus_08">-</button>
+	<button id="plus_08">+</button>
+	<span id="text_08"></span>
+	<input id="slide_08" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">R Foot Pitch</span>
+	<button id="minus_09">-</button>
+	<button id="plus_09">+</button>
+	<span id="text_09"></span>
+	<input id="slide_09" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">L Foot Yaw</span>
+	<button id="minus_10">-</button>
+	<button id="plus_10">+</button>
+	<span id="text_10"></span>
+	<input id="slide_10" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">L Foot Pitch</span>
+	<button id="minus_11">-</button>
+	<button id="plus_11">+</button>
+	<span id="text_11"></span>
+	<input id="slide_11" class="slider" type="range" min="0" max="180" value="90" />
+</div>
+
+<div class="pose_div">
+	<span class="pose_title">Red</span>
+	<button id="minus_12">-</button>
+	<button id="plus_12">+</button>
+	<span id="text_12"></span>
+	<input id="slide_12" class="slider" type="range" min="0" max="255" value="0" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">Green</span>
+	<button id="minus_13">-</button>
+	<button id="plus_13">+</button>
+	<span id="text_13"></span>
+	<input id="slide_13" class="slider" type="range" min="0" max="255" value="0" />
+</div>
+<div class="pose_div">
+	<span class="pose_title">Blue</span>
+	<button id="minus_14">-</button>
+	<button id="plus_14">+</button>
+	<span id="text_14"></span>
+	<input id="slide_14" class="slider" type="range" min="0" max="255" value="255" />
+</div>
+</div>
+
+<br/>     
+<div id="recv"></div>
+<div id="log"></div>  
+
+<script src="js/serial.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

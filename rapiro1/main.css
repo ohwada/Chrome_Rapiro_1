@@ -1,0 +1,107 @@
+html {
+  overflow: scroll;
+}
+
+body {
+	background-color: #f8f8f8;
+	font-size: 16px;
+}
+
+#serial_status.error {
+	color: red;
+}
+
+#serial_status.on {
+	color: green;
+}
+
+#move_red {
+	background-color: #ff0000;
+	color: #000000;
+	border-color: #cccccc;
+	width: 90px;
+	font-size: 20px;
+}
+
+#move_green {
+	background-color: #00ff00;
+	color: #000000;
+	border-color: #cccccc;
+	width: 90px;
+	font-size: 20px;
+}
+
+#move_blue {
+	background-color: #0000ff;
+	color: #eeeeee;
+	border-color: #cccccc;
+	width: 90px;
+	font-size: 20px;
+}
+
+#move_yellow {
+	background-color: #ffff00;
+	color: #000000;
+	border-color: #cccccc;
+	width: 90px;
+	font-size: 20px;
+}
+
+#move_push {
+	background-color: #888888;
+	color: #eeeeee;
+	border-color: #cccccc;
+	width: 90px;
+	font-size: 20px;
+}
+
+.button_serial {
+	font-size: 20px;
+}
+
+.block_show {
+	width: 300px;
+}
+
+.button_show {
+	float: left;
+	width: 45%;
+	margin: 2px;
+	font-size: 24px;
+}
+
+.clear {
+    clear : both;
+}
+
+.block_arrow {
+	margin-left: 35px;
+}
+
+.pose_div {
+	display: block;
+	padding: 10px;
+	width: 300px;
+}
+
+.pose_title {
+	width: 150px;
+	font-weight: bold;
+}
+
+.slider {
+	display: block; 
+	-webkit-appearance:none !important;
+	width: 90%;
+	margin: 20px auto;
+	height: 6px;
+	background: rgb(13, 168, 97);
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance:none !important;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: rgb(67, 135, 253);
+}
