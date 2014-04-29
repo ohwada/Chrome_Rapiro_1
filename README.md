@@ -24,7 +24,7 @@ Refer <a href="https://developer.chrome.com/apps/first_app" target="_blank">Crea
 5. Connect RAPIRO to PC with USB serial. <br>
 
 ## blog
-<a href="http://android.ohwada.jp/archives/4528" target="_blank">RAPIRO controlled by Chrome App</a> 
+<a href="http://android.ohwada.jp/archives/4528" target="_blank">RAPIRO controlled by Chrome App (Japanese)</a> 
 
 ## Screenshot
 ![screenshot](https://raw.githubusercontent.com/ohwada/Chrome_Rapiro_1/master/docs/screenshot_rapiro_move.png)
