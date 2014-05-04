@@ -9,10 +9,10 @@ const DEBUG_SHOW_RECV = false;
 const SERIAL_BITRATE = 57600;
 
 // Servo 0 -11, R, G, B  
-const SLIDER_MIN_ARRAY = [ 0, 0, 0, 40, 60, 0, 50, 60, 70, 70, 50, 50, 0, 0, 0 ];
+const SLIDER_MIN_ARRAY = [ 0, 0, 0, 40, 70, 0, 50, 70, 70, 70, 50, 50, 0, 0, 0 ];
 const SLIDER_MAX_ARRAY = [ 180, 180, 180, 130, 110, 180, 140, 110, 130, 110, 110, 110, 255, 255, 255 ];
 const SLIDER_INIT_ARRAY = [ 90, 90, 0, 130, 90, 180, 50, 90, 90, 90, 90, 90, 0, 0, 255 ];
- 
+
 (function() {
 	var blockMove = document.getElementById("block_move");
 	var blockPose = document.getElementById("block_pose");
