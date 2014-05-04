@@ -4,7 +4,7 @@
  */
 
 const DEBUG_SHOW_SUCCESS = false;
-const DEBUG_SHOW_SEND = true;
+const DEBUG_SHOW_SEND = false;
 const DEBUG_SHOW_RECV = false;
 const SERIAL_BITRATE = 57600;
 
